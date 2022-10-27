@@ -10,13 +10,21 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let loginViewController = LoginViewController()
+    let onboardingContainerViewController = OnboardingContainerViewController()
+    let dummyViewController = DummyViewController()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        loginViewController.delegate = self
+        onboardingContainerViewController.delegate = self
+        dummyViewController.delegate = self
+        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
-        window.rootViewController = OnboardingContainerViewController()
+      
+        window.rootViewController = loginViewController
         self.window = window
     }
 
@@ -50,4 +58,42 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
+
+extension SceneDelegate {
+    func setRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard let window = self.window, animated else {
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+            return
+        }
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+        UIView.transition(with: window, duration: 0.3,options: .transitionCrossDissolve, animations: nil, completion: nil)
+    }
+}
+
+extension SceneDelegate: LoginViewControllerDelegate {
+    func didLogin() {
+        if LocalState.hasOnboarded {
+            setRootViewController(dummyViewController, animated: true)
+        }else {
+            setRootViewController(onboardingContainerViewController, animated: true)
+        }
+    }
+}
+
+extension SceneDelegate: OnboardingContainerViewControllerDelegate {
+    func didFinishOnboarding() {
+        LocalState.hasOnboarded = true
+        setRootViewController(dummyViewController, animated: true)
+    }
+}
+
+extension SceneDelegate: LogoutDelegate {
+    func didLogout() {
+        setRootViewController(loginViewController, animated: true)
+    }
+}
+    
+
 
