@@ -20,6 +20,7 @@
 		51B424CA290A416900DFBEC4 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B424C9290A416900DFBEC4 /* LocalState.swift */; };
 		51B424CD290A6BCD00DFBEC4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B424CC290A6BCD00DFBEC4 /* Extensions.swift */; };
 		51B424CF290A6E5C00DFBEC4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B424CE290A6E5C00DFBEC4 /* MainTabBarController.swift */; };
+		51B424D2290A7A4400DFBEC4 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B424D1290A7A4400DFBEC4 /* AccountSummaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		51B424C9290A416900DFBEC4 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		51B424CC290A6BCD00DFBEC4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		51B424CE290A6E5C00DFBEC4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		51B424D1290A7A4400DFBEC4 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		512804E229076D19001CA814 /* MilkyWay */ = {
 			isa = PBXGroup;
 			children = (
+				51B424D0290A787100DFBEC4 /* AccountSummary */,
 				51B424CB290A6BBD00DFBEC4 /* Extensions */,
 				51B424C8290A411F00DFBEC4 /* Util */,
 				512804FB290930A3001CA814 /* Onboarding */,
@@ -126,6 +129,14 @@
 				51B424CC290A6BCD00DFBEC4 /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		51B424D0290A787100DFBEC4 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				51B424D1290A7A4400DFBEC4 /* AccountSummaryViewController.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 				512804E429076D19001CA814 /* AppDelegate.swift in Sources */,
 				512804FD29093F01001CA814 /* OnboardingViewController.swift in Sources */,
 				512804FA290774BC001CA814 /* LoginView.swift in Sources */,
+				51B424D2290A7A4400DFBEC4 /* AccountSummaryViewController.swift in Sources */,
 				512804E629076D19001CA814 /* SceneDelegate.swift in Sources */,
 				51B424CA290A416900DFBEC4 /* LocalState.swift in Sources */,
 			);

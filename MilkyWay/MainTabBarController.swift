@@ -45,13 +45,7 @@ class MainTabBarController: UITabBarController {
     
     private func setupTabBar() {
         tabBar.tintColor = AppConfig.appColor
-        tabBar.isTranslucent = false
-    }
-}
-
-class AccountSummaryViewController: UIViewController {
-    override func viewDidLoad() {
-        view.backgroundColor = .systemGreen
+        //tabBar.isTranslucent = false
     }
 }
 
