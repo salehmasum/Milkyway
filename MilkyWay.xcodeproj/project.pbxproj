@@ -18,6 +18,8 @@
 		512804FF29093F14001CA814 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512804FE29093F14001CA814 /* OnboardingContainerViewController.swift */; };
 		51B424C7290A223400DFBEC4 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B424C6290A223400DFBEC4 /* DummyViewController.swift */; };
 		51B424CA290A416900DFBEC4 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B424C9290A416900DFBEC4 /* LocalState.swift */; };
+		51B424CD290A6BCD00DFBEC4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B424CC290A6BCD00DFBEC4 /* Extensions.swift */; };
+		51B424CF290A6E5C00DFBEC4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B424CE290A6E5C00DFBEC4 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		512804FE29093F14001CA814 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		51B424C6290A223400DFBEC4 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		51B424C9290A416900DFBEC4 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		51B424CC290A6BCD00DFBEC4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		51B424CE290A6E5C00DFBEC4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +70,13 @@
 		512804E229076D19001CA814 /* MilkyWay */ = {
 			isa = PBXGroup;
 			children = (
+				51B424CB290A6BBD00DFBEC4 /* Extensions */,
 				51B424C8290A411F00DFBEC4 /* Util */,
 				512804FB290930A3001CA814 /* Onboarding */,
 				512804F829077344001CA814 /* Files */,
 				512804F729077337001CA814 /* Login */,
 				512804E329076D19001CA814 /* AppDelegate.swift */,
+				51B424CE290A6E5C00DFBEC4 /* MainTabBarController.swift */,
 				512804E529076D19001CA814 /* SceneDelegate.swift */,
 				512804E929076D19001CA814 /* Main.storyboard */,
 				512804EC29076D1F001CA814 /* Assets.xcassets */,
@@ -112,6 +118,14 @@
 				51B424C9290A416900DFBEC4 /* LocalState.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		51B424CB290A6BBD00DFBEC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				51B424CC290A6BCD00DFBEC4 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +200,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				51B424C7290A223400DFBEC4 /* DummyViewController.swift in Sources */,
+				51B424CD290A6BCD00DFBEC4 /* Extensions.swift in Sources */,
+				51B424CF290A6E5C00DFBEC4 /* MainTabBarController.swift in Sources */,
 				512804E829076D19001CA814 /* LoginViewController.swift in Sources */,
 				512804FF29093F14001CA814 /* OnboardingContainerViewController.swift in Sources */,
 				512804E429076D19001CA814 /* AppDelegate.swift in Sources */,

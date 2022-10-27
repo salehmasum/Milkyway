@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
       
-        window.rootViewController = loginViewController
+        window.rootViewController = MainTabBarController()
         self.window = window
     }
 

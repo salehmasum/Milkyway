@@ -65,7 +65,6 @@ extension DummyViewController {
 
 extension DummyViewController {
     @objc private func logoutButtonTapped() {
-        print("logout")
         delegate?.didLogout()
     }
 }

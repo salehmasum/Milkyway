@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public class LocalState {
     private enum Keys: String {
@@ -20,4 +21,8 @@ public class LocalState {
             UserDefaults.standard.synchronize()
         }
     }
+}
+
+struct AppConfig {
+    static let appColor: UIColor = .systemTeal
 }
